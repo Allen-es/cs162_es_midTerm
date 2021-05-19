@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS OrderDetails (
                 Address varchar(250)
                 );
                 
-	/*ALTER TABLE customer ADD CONSTRAINT FOREIGN KEY (PersonID) REFERENCES Person (PersonID) ON DELETE CASCADE;
+	ALTER TABLE customer ADD CONSTRAINT FOREIGN KEY (PersonID) REFERENCES Person (PersonID) ON DELETE CASCADE;
 	ALTER TABLE employee ADD CONSTRAINT FOREIGN KEY (PersonID) REFERENCES Person (PersonID) ON DELETE CASCADE;
     ALTER TABLE Employee ADD CONSTRAINT FOREIGN KEY (DepartmentName) REFERENCES Department (Name) ON DELETE CASCADE;
     ALTER TABLE OrderDetails ADD CONSTRAINT FOREIGN KEY (PersonID) REFERENCES Person (PersonID) ON DELETE CASCADE;
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS OrderDetails (
 	ALTER TABLE orderDetails ADD CONSTRAINT FOREIGN KEY (orderID) REFERENCES OrderForm (OrderID) ON DELETE CASCADE;
    ALTER TABLE OrderDetails ADD CONSTRAINT FOREIGN KEY (ItemNumber) REFERENCES Item (ItemNumber);
     
-                */
+                
 INSERT INTO orderform (OrderDate)
 	VALUES
 	('2021-02-26'), 
